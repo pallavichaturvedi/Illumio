@@ -38,7 +38,7 @@ class Firewall:
 				#convert to list if range given
 				range_ip = rule[3].split("-")
 
-				#covert string to integer by replacing "." with "" and compare integers
+				#convert string to integer by replacing "." with "" and compare integers
 				if len(range_ip) == 2:
 					if int(range_ip[0].replace(".","")) <= int(ip.replace(".","")) <= int(range_ip[1].replace(".","")):
 						return True
